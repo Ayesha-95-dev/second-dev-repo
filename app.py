@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    return f"Hello! The current time is: {now}. Stay connected for further updates"
+    return f"Hello! The current time is: {now}. That is it."
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
